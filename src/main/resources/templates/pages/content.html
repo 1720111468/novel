@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top">
+				<div class="top_con">
+					<div class="top_left">
+					  <a href="javascript:setHome();">将本站设为首页</a>
+						&nbsp;&nbsp;|&nbsp;&nbsp;
+					  <a href="javascript:topCase();">收藏本站</a>
+					</div>
+					<div class="top_right">
+						<form name="mylogin" id="mylogin" method="post" action="#">
+						  <div class="cc">
+							 账号：<input type="text" name="" id="" value="" /> 
+							 密码：<input type="text" name="" id="" value="" />
+							 <input type="submit" class="int" value="登 录" />
+							 <a href="#">用户注册</a>
+						  </div>	
+						</form>
+					</div>
+				</div>
+			</div>
+		<div class="header">
+				<div class="wrap">
+					<div class="logo">
+						<img src="images/logo.gif" >
+					</div>
+					<div class="search">
+						<form action="#" method="post" target="_blank">
+							<input type="search" class="text" name="q" placeholder="小说名、作者" />
+							<input type="submit" class="btn" value="搜索" />
+						</form>
+					</div>
+				</div>
+			</div>
+		<div class="nav">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="xuanhuan.html">玄幻小说</a></li>
+					<li><a href="xianxia.html">仙侠小说</a></li>
+					<li><a href="dushi.html">都市小说</a></li>
+					<li><a href="lishi.html">历史小说</a></li>
+					<li><a href="kehuan.html">科幻小说</a></li>
+					<li><a href="wangyou.html">网游小说</a></li>
+					<li><a href="wanben.html">完本小说</a></li>
+					<li><a href="book.html">我的书架</a></li>
+				</ul>
+		</div>
+		<div class="b_body">
+		 <div class="path">
+		  <div class="p">
+		   <a href="/">笔趣阁</a> &gt; <a href="/book_399/">飞剑问道</a> &gt; 第二章 擒下
+		   <span class="oninfo">
+			   <div id="page_set">
+				   <select onchange="javascript:setFont(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor">
+				   	<option value="宋体">字体</option>
+					<option value="方正启体简体">默认</option>
+					<option value="黑体">黑体</option>
+					<option value="楷体_GB2312">楷体</option>
+					<option value="微软雅黑">雅黑</option>
+					<option value="方正启体简体">启体</option>
+					<option value="宋体">宋体</option>
+				   </select>
+				   <select onchange="javascript:setColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor">
+				   	<option value="#000">颜色</option>
+					<option value="#000">默认</option>
+					<option value="#9370DB">暗紫</option>
+					<option value="#2E8B57">藻绿</option>
+					<option value="#2f4f4f">深灰</option>
+					<option value="#778899">青灰</option>
+					<option value="#800000">栗色</option>
+					<option value="#6a5acd">青蓝</option>
+					<option value="#bc8f8f">玫褐</option>
+					<option value="#f4a460">黄褐</option>
+					<option value="#f5f5dc">米色</option>
+					<option value="#f5f5f5">雾白</option>
+				   </select>
+				   <select onchange="javascript:setSize(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor">
+				   	<option value="#e9faff">大小</option>
+					<option value="19pt">默认</option>
+					<option value="10pt">10pt</option>
+					<option value="12pt">12pt</option>
+					<option value="14pt">14pt</option>
+					<option value="16pt">16pt</option>
+					<option value="18pt">18pt</option>
+					<option value="20pt">20pt</option>
+					<option value="22pt">22pt</option>
+					<option value="25pt">25pt</option>
+					<option value="30pt">30pt</option>
+				   </select>
+				   <select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor">
+				   	<option value="#e9faff" style="background-color:#e9faff;">背景</option>
+					<option value="#e9faff" style="background-color:#e9faff;">默认</option>
+					<option value="#fff" style="background-color:#fff;">白雪</option>
+					<option value="#000" style="background-color:#000;">漆黑</option>
+					<option value="#ffffed" style="background-color:#ffffed;">明黄</option>
+					<option value="#eefaee" style="background-color:#eefaee;">淡绿</option>
+					<option value="#cce8cf" style="background-color:#cce8cf;">草绿</option>
+					<option value="#fcefff" style="background-color:#fcefff;">红粉</option>
+					<option value="#efefef" style="background-color:#efefef;">深灰</option>
+					<option value="#f5f5dc" style="background-color:#f5f5dc;">米色</option>
+					<option value="#d2b48c" style="background-color:#d2b48c;">茶色</option>
+					<option value="#e7f4fe" style="background-color:#e7f4fe;">银色</option>
+				   </select>
+				   <select onchange="javascript:setWidth(this.options[this.selectedIndex].value);" id="bcolor" name="bcolor">
+					<option value="95%">宽度</option>
+					<option value="95%">默认</option>
+					<option value="85%">85%</option>
+					<option value="76%">76%</option>
+					<option value="67%">67%</option>
+					<option value="53%">53%</option>
+					<option value="41%">41%</option>
+				   </select>
+			   </div>
+		   </span>
+		  </div>
+		 </div>
+		<div class="content">
+		 <h1>第二章 擒下</h1>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;待得傍晚时分，大哥‘秦安’才不舍的和兄弟告别，带着妻子儿女乘坐马车前往南城。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夜幕降临。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秦云换了一身黑衣，来到了大哥秦安的宅院外，站在黑暗角落。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“以我在大哥身上留下的印记来看，就是这了。”秦云看着这座宅院，“这还是我第一次来大哥的宅院，没想到就是因为妖怪的事。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一迈步，便已经飞过十余丈到了宅院内的一座楼阁屋顶，悄无声息，他半蹲着扫视整个宅院。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宅院占地数亩，也有数个仆人在巡查，在阴暗处更有护卫高手守护。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“法眼，开！”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秦云双眸瞳孔深处法纹凝结，再度开启法眼。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法眼观看下，隐藏着的两个护卫高手，明暗巡逻的六个仆人，个个生命气息显现。秦云也看到了大哥‘秦安’和妻子儿女等人的生命气息，如今应该都已入睡。在自己法眼范围内，便是有房屋阻碍，一切气息依旧无所遁形。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“找到了。”秦云很快在丫鬟住处的其中一个屋子，看到了里面浓郁的绿色妖气。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嗖。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;身影模糊悄无声息就穿过十余丈距离来到那屋门处，轻轻一推，里面门栓就自然打开。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屋内。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;穿着贴身衣裤的少女正盘坐在床铺上，她正皱眉。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“哼哼，还要三个月，妖气才能真正融入他的三魂七魄，到时才算大功告成。”少女眼眸中泛着恐怖的煞气，“算上我在这已经待的六个月，就为了这一个小小富商，我给他当丫鬟九个月？等到头领的大事完成了，这这宅院内骂过我欺负过我的，全部都一个个吃掉！”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一头凶戾妖怪，被当丫鬟呼来喝去半年，怎能心中不怒？
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只是现在憋着而已。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“等到后半夜，那秦安熟睡了，还可以再去吸一次阳气。”少女闭上眼睛，耐心默默等候着。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;忽然——
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门悄无声息就推开了，没发出丝毫声响。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可少女还是有所感应的睁开眼，一眼就看到推门而入的黑衣青年，黑衣青年很随意的走了进来，走进来的同时还有无形波动以他为中心弥漫开去。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“封！”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秦云进来的同时，也施展了法术，一光罩弥漫开来，罩住了秦云和屋内的少女。当然肉眼凡胎看不见这光罩。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法术‘封禁术’，可封禁四方，有困敌之效！也可隔绝内外，别人听不到声音。更可封禁敌人实力，乃是一门极为了得的法术。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秦云随手又关上了屋门。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“法术？”少女心中一颤。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法术，乃古往今来的道门佛门高人从天地自然中悟出的法门，法术都是秘不外传的，且施展起来都极难极难，入门门槛都极高，能施展出法术，就已经显示了眼前这黑衣青年的可怕。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“原来是一只猫妖。”秦云轻声道，看着眼前的少女，在法眼下，自然看出少女的原形。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;少女穿着贴身衣裤，怯生生走下床铺，赤着一双小脚站在那，柔柔弱弱连道：“前辈饶命，前辈饶命，我虽在这秦家，但并没有为恶。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“没有为恶？那这家主人秦安身上，怎么尽是你的妖气，且都深入肌理脏腑？”秦云也不急着动手，因为他有太多疑惑之处，“若是如此下去，这家主人秦安怕是要不了多久就会重病在床，医药难救，唯有身死。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“什么。”少女大惊，忍不住眼中含泪，“我没有，我没有想要害秦郎。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“没有？”秦云冰冷看着她，“可你就是在害他。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“我没有，我没想害他，我不知道！”少女焦急自责道，“不瞒前辈，我和秦郎是真心相爱，又怎会舍得害秦郎？只是我身为妖怪，一直不敢告知秦郎，难道是我和秦郎欢好，让妖气渗透到他身体了？”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“欢好？”秦云冷笑，“他阳气如此之弱，可不仅仅只是欢好，怕是你在故意吸他阳气吧。你完全可以一次就将他阳气吸光，可你却每次只吸取少许，到底有何图谋？”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;少女暗惊：“这青年看起来很年轻，还以为见识一般，本想蒙骗过去，找个机会逃掉，哪想连我吸阳气都能看出。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“我没有害他，真没有。”少女连道，“前辈你要相信我。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“人和妖怪相恋生子的都有，仅仅欢好，岂会阳气衰弱到如此地步？”秦云冷笑，“到这时候还在撒谎，还不老实说来。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“我，我也不知道……”少女泪水滑落，痛苦无比。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是紧跟着毫无征兆的猛然朝旁边窗户冲去，她速度太快，一瞬间就化作了幻影，右手更是立即长出了毛发，更有利爪长出。她右爪猛然一挥就要撕裂这封禁光罩。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;太快了！
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可站在一旁的秦云速度更快，他几乎瞬间就到了少女身旁，左手一伸就抓了过来。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;少女惊慌要闪躲，可那抓过来的左手看似普普通通，却怎么都躲不开，五根手指轻易就抓住了她的脖子。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;少女此刻也已经大变样，全身都长出了毛发，脑袋上也着毛发，耳朵都变成了猫耳朵，双眸也变得绿色，瞳孔成竖瞳，口中更是有锋利的牙齿，她还欲要挣扎。但是秦云左手中大量真元之力涌入猫妖少女体内，在她体内再度施展封禁之术，少女立即反抗不得。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“嘭。”随手一扔，猫妖少女直接被摔在地面上。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“说吧，在我面前就没必要说谎，没用的，不说出让我相信的理由，就只能除掉你了。”秦云看着她。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他必须弄明白兄长被下毒手的原因。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吸阳气很常见。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;妖怪大多对月吸收太阴之气修行，孤阴不长，想要阴阳调和？太阳之力又太恐怖，而人之阳气就是最佳之选，吸收后对妖怪修行有大助力。所以妖怪吸阳气倒也常见。可一只妖怪耗费一年半载，每次只吸收少许？还来当丫鬟？太浪费时间了，有这点时间，可以吸收上百人了，每人吸收部分，吸收的要多多了。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“说。”秦云看着她，无形煞气笼罩过来，
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猫妖少女心颤，知道眼前人手下怕是杀过不少妖怪，不是那种初出茅庐的修行者，面临生死关头，暗忖：“不说，就是个死。若是傻乎乎说了，恐怕还是个死！顾不得了，只能死中求生。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“前辈慧眼，我这点手段瞒不过前辈。”猫妖少女连道，“我辛辛苦苦在这当丫鬟，每次只吸收少许阳气，日积月累是希望我的妖气逐渐渗透，如今渗透肌理脏腑，再过上两三个月，怕就能渗透入三魂七魄。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秦云眼皮一跳。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“到时妖气渗透三魂七魄，便是修行高人来此也束手无策，这时候他要么病重而死，要么唯有我这个妖气的主人能够救他。”猫妖少女说道，“从此他便只有依靠我而活。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“妖仆？”秦云声音冰冷。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;妖气入魂魄，那就真没救了，只有靠妖气的主人而活。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生死受妖怪控制，乖乖成为妖怪仆人。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“不能算妖仆，我若是愿意，我这妖气的主人还可以抽离妖气，让他恢复正常。”猫妖少女连说道。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“抽离妖气？都渗透魂魄了，你要一丝丝抽离妖气，怕也要耗费数年吧。秦安一个小小商人，不值得你们耗费如此大力气。”秦云冷声道，“是因为他的父亲？”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;父亲秦烈虎，乃是三大银章捕头之一，乃是广凌郡城的权势人物。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“我也是奉我家头领之命行事。”猫妖少女连道，“个中缘由，就不清楚了。”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“你家头领他在哪？”
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“就在广凌郡城。”猫妖少女为了活命，老老实实说道。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“带我过去。”秦云瞥了眼猫妖少女。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“我愿意带路，只是前辈得饶我性命，我也只是一小妖，被逼迫才如此。”猫妖少女看着秦云。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“别废话，带路。”秦云抓着猫妖少女肩膀，猫妖少女反抗不得。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“若是前辈不肯给我活命机会，那我只有宁愿一死了。”猫妖少女咬牙。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秦云沉默。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猫妖少女也是在赌，她相信这人如果要救秦安，一定想要查出背后指使者。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间在流逝，猫妖少女闭上眼睛，咬牙硬撑。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“好，我答应你，只要能够找到背后指使者，确定是他吩咐你做的。我可以饶你一命。”秦云说道。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猫妖少女心中一喜，她知道人族修行者越是实力强，越是心高气傲者，就越加在意承诺！一诺千金，轻易不会反悔的。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“前辈慈悲，给我一条生路，我这就带路。”猫妖少女连说道。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嗖。
+		  <br />
+		  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;抓着猫妖少女的肩膀，秦云悄无声息离开了大哥的宅院，宅院内的仆人依旧巡逻着，他们根本没听到任何动静，并不知道有一只盘踞在宅院半年之久的猫妖已经被抓走。
+		</div>
+		<div class="page_chapter">
+		  <ul>
+			<li><a href="/book_399/24805996.html">上一章</a></li>
+			<li><a href="/book_399/">返回目录</a></li>
+			<li><a href="/book_399/24805998.html">下一章</a></li>
+			<li><a rel="nofollow" href="javascript:addBookMark('399','24805997','飞剑问道','第二章 擒下');">加入书签</a>
+		    </li>
+		  </ul>
+		</div>
+		
+		<div class="footer">
+				<div class="link">
+				笔趣阁友情连接： 
+				<a href="#" target="_blank">笔趣阁</a>
+				<a href="#" target="_blank">凡人修仙传仙界篇</a>
+				<a href="#" target="_blank">沧元图</a>
+				<a href="#" target="_blank">王婿</a>	
+				</div>
+			<hr>
+			<p>本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。</p>
+			<p>Copyright © 2017 笔趣阁 All Rights Reserved.</p>
+		</div>	
+	</body>
+</html>
