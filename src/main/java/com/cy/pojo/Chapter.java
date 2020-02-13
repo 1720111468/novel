@@ -1,4 +1,4 @@
-package com.cy.vo;
+package com.cy.pojo;
 
 import java.util.Date;
 
@@ -12,10 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Category {
+public class Chapter {
 	private Integer id;
-	private String name;
-	private Integer state;
+	private Integer novelId;
+	private String title;
+	private String content;
 	//@DateTimeFormat(pattern="yyyy/MM/dd")
 	private Date created;
 	//@DateTimeFormat(pattern="yyyy/MM/dd")

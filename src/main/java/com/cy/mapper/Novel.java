@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-import com.cy.vo.Category;
+import com.cy.pojo.Category;
 
 @Mapper
 public interface Novel {

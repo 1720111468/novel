@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.cy.vo.Category;
+import com.cy.pojo.Category;
 
 @SpringBootTest
 public class NovelTests {
-	@Autowired
+	@Autowired 
 	private Novel novel;
 	@Test
 	public void novelTests() {
